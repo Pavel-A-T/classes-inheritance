@@ -1,10 +1,8 @@
 import Character from './character';
 
 export default class Daemon extends Character {
-  constructor(name, type) {
+  constructor(name, type = 'Daemon') {
     super(name, type);
-    this.health = 100;
-    this.level = 1;
     this.attack = 10;
     this.defense = 40;
   }

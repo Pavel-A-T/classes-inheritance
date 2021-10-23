@@ -11,5 +11,8 @@ export default class Character {
     if ((typeof type === 'string') && (Character.types().includes(type))) {
       this.type = type;
     } else throw new Error(`This type ${type} is wrong`);
+
+    this.health = 100;
+    this.level = 1;
   }
 }
